@@ -1,0 +1,57 @@
+1) INTERVALOS USANDO IF E AND (&&)
+
+#include <stdio.h>
+int main(int argc, char const *argv[]) {
+int numero;
+
+printf("Digite um numero: ");
+scanf("%d", &numero);
+   if(numero >= 30 && numero <= 120) {
+    printf("O numero esta no intervalo [30;120]\n");
+
+   } else {
+  printf("O numero nao esta no intervalo [30;120]\n");
+   }
+    return 0;
+}
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) MRU 
+
+#include <stdio.h>
+
+int main(int argc, char const *argv[]) {
+float d, v, t, vd, vv, vt;
+printf("digite a distancia: \n");
+scanf("%f", &d);
+
+printf("digite a velocidade: \n");
+scanf("%f", &v);
+
+printf("digite o tempo: \n");
+scanf("%f", &t);
+
+//processamento
+
+if(d == 0){
+vd = v * t;
+printf("A distancia eh: %f", vd);
+}else if ( v == 0 ){
+vv = d / t;
+printf("A velocidade eh: %f\n", vv);
+
+}else if (t == 0){
+vt = d / v;
+printf("o tempo eh: %f", vt);
+
+}else{
+printf("impossivel calcular.\n");
+}
+return 0;
+
+}
+
+
