@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+float serie = 0;
+int i, x, f, numero;
+float fat;
+float termo = 0;
+
+printf("informe o valor de x: \n");
+scanf("%d", &x);
+
+for(i = 0; i <= 20; i++){
+termo = pow(x,1);
+fat =1;
+for(f =1; f <= i; f++){
+    fat *= f;}
+    termo = termo / fat;
+serie += termo;
+}
+printf("valor de e = %.2f", serie);
+    return 0;
+}
+
+///////////////
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+float serie = 0;
+int i, x, f, numero;
+float fat = 1;
+float termo = 0;
+int somar = 1; //flag
+float seno;
+
+printf("informe o valor de x: \n");
+scanf("%d", &x);
+
+seno = 0;
+
+for(i = 0; i <= 20; i+=2){
+
+termo = pow(x,i);
+fat =1;
+for(f =1; f <= i; f++){
+    fat *= f;}
+        termo /= fat;
+
+    if( somar){
+        seno += termo;
+        somar = 0;
+    }else{
+    seno -= termo;
+    somar = 1;}
+
+serie += termo;
+}
+printf("senx = %.2f", serie);
+    return 0;
+}
