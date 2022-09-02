@@ -1,0 +1,99 @@
+2.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int p, j , anos;
+    anos = 0;
+    p = 150;
+    j = 140;
+
+    while (j <= p){
+        j = j + 3;
+        p = p + 2;
+        anos++;
+
+    }
+printf("Joao sera maior que Pedro em %d anos", anos);
+    return 0;
+    
+}
+
+====================================================================================================
+
+3.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+
+float n, medias, mediaf, perct, filhos, pop, popf, salt, filt, maior, perc;
+n = 0;
+pop = 0;
+salt = 0;
+maior = -99999;
+popf = 0;
+filt = 0;
+while (n >= 0){
+    printf("informe o salario: \n");
+    scanf("%f", &n);
+    if(n  >= 0){
+        printf("informe o numero de filhos: \n");
+        scanf("%f", &filhos);
+        pop ++;
+        salt += n;
+        filt += filhos;
+        if( n > maior){
+        maior = n;}
+if ( n <= 1500){
+    popf ++;
+}
+    }
+}
+    medias = salt / pop;
+    mediaf = filt / pop;
+    perc = popf / pop;
+    perct = perc *100;
+    printf("media do salario da populacao = %.2f \n", medias);
+     printf("media do numero de filhos = %.2f \n", mediaf);
+      printf("maior salario = %.2f \n", maior);
+       printf("percentual de pessoas com salario ate 1500R$: %.f%% \n", perct);
+
+    return 0;
+}
+
+=================================================
+
+4.
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x, n, i, total, f, g, h, j;
+    float r, result;
+printf("digite o valor de x e n: \n");
+scanf("%d" "%d", &x, &n);
+ for(i =1 ; 1 <= n; i++){
+        f = i + 1;
+        j = pow(x,1);
+        g = j + f;
+        h = x +j;
+        r = g / h;
+        total += r;
+        }
+
+        result = 3 * total;
+        printf("o valor d aexpressao e = %.2f", result);
+
+    return 0;
+}
+
+corrigir essa dai ta dando pau
