@@ -74,26 +74,25 @@ if ( n <= 1500){
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-    int x, n, i, total, f, g, h, j;
+    float x, n, i, total, f, g, h, j;
     float r, result;
 printf("digite o valor de x e n: \n");
-scanf("%d" "%d", &x, &n);
- for(i =1 ; 1 <= n; i++){
+scanf("%f" "%f", &x, &n);
+ for(i = 1; i <= n; i++){
         f = i + 1;
-        j = pow(x,1);
+        j = pow(x,i);
         g = j + f;
-        h = x +j;
+        h = x + i;
         r = g / h;
         total += r;
         }
 
         result = 3 * total;
-        printf("o valor d aexpressao e = %.2f", result);
+        printf("f(x,n) = %.2f", result);
 
     return 0;
 }
-
-corrigir essa dai ta dando pau
