@@ -1,0 +1,42 @@
+//passagem de parâmetros: por valor ou referência.
+
+#include <stdio.h>
+#include <stdlib.h>
+int soma(int x, int y)
+{
+x++;
+y--;
+return x + y;
+}
+void alterar(int *cu){
+*cu += 5;
+}// o asterisco é essencial no void com operações
+void imprimir (int x){
+printf("%d\n", x);
+}
+int main() {
+int x, y, w;
+printf("digite dois numeros: ");
+scanf("%d" "%d", &x, &y);
+
+// suponhamos que os valores para x e y sao 4 e 7.
+//Logo, em int soma(int x, int y) o valor de x e y é 5 e 6 respectivamente.
+
+imprimir(x);
+imprimir(y);
+
+alterar(&x);
+alterar(&y);
+
+imprimir(x);
+imprimir(y);
+
+
+w = soma(x, y);
+imprimir(w);
+return 0;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Atividade 1 ( olhar no moodle)
