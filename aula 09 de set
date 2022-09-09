@@ -1,0 +1,87 @@
+Exercício 2.
+Codifique uma função com a assinatura
+int somaintervalo(int n1, int n2)
+Que retorne a soma dos números inteiros que
+existem no intervalo fechado entre n1 e n2 (ou
+seja, incluindo n1 e n2).
+Caso o valor de n2 seja menor que o de n1, a
+função deve tratar o intervalo como sendo de n2
+até n1 sem que o invocador da função perceba.
+n=somaintervalo(3, 6);
+n recebe 18, referente a: 3 + 4 + 5 + 6
+===============================================================
+#include <stdio.h>
+#include <stdlib.h>
+int somaintervalo (int n1, int n2){
+int i;
+int r = 0;
+
+if (n1 < n2){
+    menor = n1;
+    maior = n2;
+}else{
+menor = n2;
+maior = n1;
+}
+for(i = menor; i <= maior ; i++){
+    r += i;
+
+}
+return r;
+}
+int main(){
+    int a, b;
+int resultado;
+ printf("digite dois valores: \n");
+ scanf("%d" "%d", &a, &b);
+
+ resultado =  somaintervalo(a, b);
+ printf("soma entre o intervalo de %d e %d: %d \n", a, b, resultado);
+
+
+    return 0;
+}
+=================================================================
+
+Bhaskara 
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int delta(a, b, c){
+int resdelta;
+int rdelta;
+resdelta = b * b - 4 * a * c;
+rdelta = pow(resdelta, 0.5);
+return rdelta;
+}
+
+int main(){
+int a, b, c;
+int deltas;
+float pr, pr1, r, r1;
+int div;
+
+printf("Digite o valor de a, b e c: ");
+scanf("%d" "%d" "%d", &a, &b, &c);
+deltas = delta(a, b, c);
+div = 2 * a;
+if(deltas > 0){
+
+pr = -b + deltas;
+r = pr / div;
+pr1 = -b - deltas;
+r1 = pr1 / div;
+printf("as raizes da expressao sao %.2f e %.2f\n", r, r1);
+    return 0;
+
+
+}else{
+printf("a raiz é inexistente (delta negativo)\n");
+}
+
+}
+
