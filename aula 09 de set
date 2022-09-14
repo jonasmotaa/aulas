@@ -46,14 +46,13 @@ int resultado;
 Bhaskara 
 
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-int delta(a, b, c){
-int resdelta;
-int rdelta;
+float delta(a, b, c){
+float resdelta;
+float rdelta;
 resdelta = b * b - 4 * a * c;
 rdelta = pow(resdelta, 0.5);
 return rdelta;
@@ -84,4 +83,3 @@ printf("a raiz é inexistente (delta negativo)\n");
 }
 
 }
-
