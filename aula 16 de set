@@ -1,0 +1,35 @@
+string e etc
+===================================
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(){
+int letrasA = 0;
+int i;
+char nome[11]; // para vetores com 10 letras, colocar um espaço a mais!!!! [10] -> [11]
+// para simbolo, usar ''     e para string usar "".
+//'A'= A   "A"= A\0
+char usuario[] = "ABC";
+//char symbom = 'A';
+printf("digite seu nome: \n");
+//scanf("%s", nome); ou gets (gets é muito melhor)
+gets(nome);
+printf("Nome = %s\n", nome);
+
+//for(i = 0, i < strlen(nome); i++) strlen da o tamanho da string
+
+for(i = 0; nome[i] != '\0'; i++){
+    if (nome[i] == 'A' || nome[i] == 'a'){
+        letrasA++;
+    }
+
+}
+printf("letras a = %d", letrasA);
+
+
+
+
+return 0;
+}
