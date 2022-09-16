@@ -1,30 +1,3 @@
-VETORES
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-int main(){
-    int vetor[5];
-    int i, x;
-    for (i = 0; i < 5; i++){
-        printf("digite o falor de %d \n", i);
-            scanf("%d", &vetor[i]);
-    }
-     for (i = 0; i < 5; i++){
-  printf("[%d] = %d\n", i, vetor[i]);
-
-}
-
-
-
-
-return 0;
-}
-
-=============================================================================
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -45,8 +18,14 @@ media = total / 5;
 
 }
 
-printf("Media = %.2f ", media);
+printf("Media = %.2f \n", media);
+for (i = 0; i < 5; i++){
+        if(vetor[i] >= media){
+                printf("[%d] = %d\n", i, vetor[i]);
+        }
 
+
+    }
 
 return 0;
 }
