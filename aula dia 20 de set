@@ -1,0 +1,39 @@
+contagem de numeros impares em intervalo(exercicio 1 da lista) INCOMPLETO!!!!!! TA DANDO PAU!!!!! ATENÇÃO!!!!!!
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int contaimpar(int n1, int n2){
+int maior;
+int menor;
+int i;
+int impar = 0;
+
+if(n1 > n2){
+        maior = n1;
+        menor = n2;
+}else{
+maior = n2;
+menor = n1;
+}
+for(i = menor; i <= maior; i++){
+    if(i % 2 == 1){
+          impar++;
+        }
+
+    return impar;
+
+}
+}
+
+int main(){
+    int a, b;
+
+printf("Digite dois valores: \n");
+scanf("%d" "%d", &a, &b);
+printf("Existem %d numeros impares no intervalo entra %d e %d", contaimpar(a,b), a, b);
+
+
+return 0;
+}
