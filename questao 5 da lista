@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+
+
+int main()
+{
+float matriz[8][3];
+int i, j;
+float a, b, c;
+    for(i = 0; i < 8; i++){
+printf("digite as notas do aluno %d: \n", i+1);
+scanf("%f" "%f", &a, &b);
+
+c = (a + b) / 2;
+
+matriz[i][0] = a;
+matriz[i][1] = b;
+matriz[i][2] = c;
+}
+
+
+
+ for(i = 0; i < 8; i++){
+             printf("\nAluno %d\n", i+1);
+for (j = 0; j < 2; j++){
+printf("Nota %d = %.2f\n", j+1, matriz[i][j]);
+
+}
+printf("Media = %.2f\n", matriz[i][2]);
+ }
+     return 0;
+ }
