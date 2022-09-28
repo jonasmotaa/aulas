@@ -23,7 +23,7 @@ matriz[i][2] = c;
 void printar(){
     int i, j;
     float matriz[8][3];
-
+printf("\n=======================================\n");
  for(i = 0; i < 8; i++){
              printf("\nAluno %d\n", i+1);
 for (j = 0; j < 2; j++){
