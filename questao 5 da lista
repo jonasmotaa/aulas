@@ -1,28 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-
-
-
-
-
-int main()
-{
-float matriz[8][3];
+void lernotas(){
 int i, j;
+float matriz[8][3];
 float a, b, c;
     for(i = 0; i < 8; i++){
 printf("digite as notas do aluno %d: \n", i+1);
 scanf("%f" "%f", &a, &b);
-
-c = (a + b) / 2;
-
 matriz[i][0] = a;
 matriz[i][1] = b;
-matriz[i][2] = c;
 }
+}
+void calcularmedia(){
+    int i, j;
+    float matriz[8][3];
+    float a, b, c;
+     for(i = 0; i < 8; i++){
+c = (matriz[i][0] + matriz[i][1]) / 2;
+matriz[i][2] = c;
 
-
+}}
+void printar(){
+    int i, j;
+    float matriz[8][3];
 
  for(i = 0; i < 8; i++){
              printf("\nAluno %d\n", i+1);
@@ -32,5 +32,14 @@ printf("Nota %d = %.2f\n", j+1, matriz[i][j]);
 }
 printf("Media = %.2f\n", matriz[i][2]);
  }
+
+}
+
+int main()
+{
+lernotas();
+calcularmedia();
+printar();
+
      return 0;
  }
