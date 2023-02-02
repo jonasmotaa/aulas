@@ -1,0 +1,34 @@
+#include <stdio.h>
+void FLVazia(Tlista *Lista){
+Lista -> primeiro = (TCelula*) malloc(sizeof(TCelula));
+Lista -> ultimo = Lista -> primeiro;
+Lista -> primeiro -> prox = NULL;
+Lista -> tamanho = 0;
+
+
+}
+
+
+
+int main(){
+
+typedef struct{
+int codigo;
+}TProduto
+
+typedef struct celula{
+TProduto item;
+struct celula* prox;
+}TCelula
+
+typedef struct{
+TCelula* primeiro;
+TCelula* ultimo;
+int tamanho;
+}TLista
+
+
+
+
+return 0;
+}
